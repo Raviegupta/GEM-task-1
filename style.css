@@ -332,4 +332,13 @@ ul li {
         text-align: center;
         font-size: 0.9rem;
     }
+    .top-footer .middle {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 30px;
+    }
+    .top-footer .middle p {
+        margin-bottom: -10px;
+    }
 }
