@@ -344,4 +344,7 @@ ul li {
     #home {
         margin-right: 15px;
     }
+    .top-footer .middle div {
+        margin-bottom: 30px;
+    }
 }
