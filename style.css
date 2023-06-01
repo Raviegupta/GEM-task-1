@@ -25,6 +25,7 @@ ul li {
     /* display: flex; */
     margin: auto auto;
 }
+
 /* styling for marquee */
 .marque {
     font-size: 1.2rem;
@@ -96,6 +97,9 @@ ul li {
     background-color: #242020;
     color: white;
 }
+.mobile-header {
+    display: none;
+}
 
 
 /* CSS STYLING FOR BANNER */
@@ -116,11 +120,14 @@ ul li {
     /* border: 2px solid red; */
     width: 50%;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: 10px;
-    color: white;
-    background-color: #008081;
+    color: silver;
+    box-shadow: 0 0 5px;
     border-radius: 70px;
+}
+.hard-silicon-case-tabs .hard-case {
+    background-color: #008081;
 }
 
 /* CSS STYLING FOR HARD CASE CONTENT */
@@ -237,3 +244,84 @@ ul li {
 
 
 
+
+
+
+
+/* CSS FOR RESPONSIVE WEB DESIGN FOR TAB VIEW */
+.tab-container-size {
+    max-width: 940px;
+    margin: auto auto;
+}
+.mobile-header {
+    justify-content: space-between;
+    padding: 0px 15px;
+    box-shadow: 0 0 3px;
+}
+.mobile-header .left-side span:first-child {
+    margin-right: 15px;
+    cursor: pointer;
+}
+.mobile-header .left-side i {
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 940px) {
+    .header, .nav-right-part {
+        display: none;
+    }
+    .mobile-header {
+        display: flex;
+    }
+    .hard-case-content .mobiles-list button {
+        width: 46%;
+    }
+    .top-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 30px;
+        text-align: center;
+    }
+    .top-footer .middle {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+}
+
+/* CSS FOR RESPONSIVE WEB DESIGN FOR MOBILE VIEW */
+@media only screen and (max-width: 640px) {
+    .hard-case-content .mobiles-list  {
+        display: flex;
+        justify-content: center;
+    }
+    .hard-case-content .mobiles-list button {
+        width: 100%;
+        text-align: center;
+    }
+    .nav-left-part ul li {
+        font-size: 0.7rem;
+        padding: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .nav-left-part ul li:first-child {
+        background-color: whitesmoke;
+        color: #222;
+        font-size: 1.1rem;
+    }
+    .hard-silicon-case-tabs {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .hard-silicon-case-tabs .hard-case, .hard-silicon-case-tabs .silicon-case {
+        width: 100%; 
+        margin: 5px;
+    }
+    .main-section {
+        padding: 15px;
+    }
+}
