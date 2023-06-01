@@ -1,0 +1,241 @@
+/* --------------- GENERAL CSS STYLES STARTS ---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.max-container-size {
+    max-width: 1600px;
+    /* display: flex; */
+    margin: auto auto;
+}
+/* styling for marquee */
+.marque {
+    font-size: 1.6rem;
+    height: 60px;
+    background-color: #008081;
+    color: white;
+}
+
+/* stylling for navigation links */
+.navigation-links {
+    background-color: #242020;
+    color: white;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.nav-left-part ul li {
+    font-size: 1.6rem;
+    padding: 10px;
+    border-right: 1px solid gray;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.nav-left-part ul li:first-child {
+    background-color: whitesmoke;
+    color: #222;
+    font-size: 1.9rem;
+}
+.nav-left-part ul li:last-child {
+    border: none;
+}
+
+.nav-right-part p {
+    font-size: 1.1rem;
+    padding-right: 30px;
+}
+.nav-right-part .cart-box {
+    margin: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+/* header portion Styling starts here */
+.header {
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 0 2px;
+}
+.header ul li {
+    font-size: 1rem;
+    padding: 15px;
+    color: #777;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.header-right-part {
+    margin-right: 10px;
+}
+.header-right-part input {
+    padding: 10px;
+    font-size: 1rem;
+}
+.header-right-part i{
+    padding: 11px;
+    border: 1px solid gray;
+    background-color: #242020;
+    color: white;
+}
+
+
+/* CSS STYLING FOR BANNER */
+.banner img {
+    width: 100%;
+}
+
+
+/* CSS FOR MAIN SECTION */
+.main-section {
+    height: 700px;
+    padding: 90px;
+    margin-bottom: 100px;
+}
+/* CSS STYLING FOR HARD-CASE & SILICON CASE TABS */
+.hard-silicon-case-tabs {
+    justify-content: space-between;
+}
+.hard-silicon-case-tabs .hard-case, .hard-silicon-case-tabs .silicon-case{
+    /* border: 2px solid red; */
+    width: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    color: white;
+    background-color: #008081;
+    border-radius: 70px;
+}
+
+/* CSS STYLING FOR HARD CASE CONTENT */
+.hard-case-content {
+    margin: 20px auto;
+    border: 1px solid red;
+}
+.hard-case-content p:first-child {
+    text-align: center;
+    color: rgb(216, 40, 40);
+    font-size: 1.7rem;
+    padding: 5px;
+}
+.hard-case-content h1 {
+    text-align: center;
+    padding: 20px;
+}
+.hard-case-content p:last-child {
+    text-align: center;
+    color: #222;
+    padding: 5px;
+}
+.hard-case-content a {
+    text-decoration-line: none;
+}
+
+.hard-case-content .mobiles-list button {
+    background-color: #008081;
+    border: none;
+    color: white;
+    width: 24%;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.hard-case-content .mobiles-list  {
+    margin: 50px auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+/* css styling for footer */
+.top-footer {
+    padding: 70px 15px;
+    display: grid;
+    grid-template-columns: 22.5% 50% 27.5%;
+    background-color: #008081;
+    color: white;
+}
+
+/* css for top-footer left part */
+.top-footer .left pre {
+    margin-bottom: 10px;
+}
+
+
+/* css for top-footer right part */
+.top-footer .right .icons i {
+    margin: 20px auto;
+    font-size: 2rem;
+    color: pink;
+    margin-right: 20px;
+}
+.top-footer .right .newsletter h3 {
+    margin: 10px auto;
+}
+.top-footer .right .newsletter p {
+    margin: 5px auto;
+    line-height: 1.5;
+}
+.top-footer .right .newsletter input, .top-footer .right .newsletter button {
+    width: 100%;
+    padding: 7px;
+    color: white;
+    height: 50px;
+}
+.top-footer .right .newsletter input {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+.top-footer .right .newsletter button {
+    font-size: 1.5rem;
+    background-color: black;
+    cursor: pointer;
+}
+
+/* css for top-footer middle part */
+.top-footer .middle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.top-footer .middle .iphone-cases p, .top-footer .middle .android-cases p, .top-footer .middle .customer-services p {
+    margin-top: 20px;
+}
+
+
+/* CSS STYLING FOR BOTTOM FOOTER  */
+.bottom-footer {
+    background-color: #232323;
+    height: 90px;
+}
+.bottom-footer p{
+   color: white;
+   padding-left: 15px;
+   padding-top: 25px;
+   font-size: 1.1rem;
+}
+
+
+
