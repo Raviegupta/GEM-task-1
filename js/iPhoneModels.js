@@ -3,8 +3,6 @@ const iPhoneSearchInput = document.querySelector("#iPhone-search-input");
 const iphoneSearchBtn = document.querySelector("#iphone-search-btn");
 let iphoneListsBox = document.querySelector("#mobile-lists-box");
 let iphoneLists = document.querySelector(".mobiles-list");
-console.log(iphoneListsBox);
-console.log(iphoneLists);
 
 const iPhoneAvailable = [
     "iphone 14 Pro Max",
@@ -33,12 +31,12 @@ const iPhoneAvailable = [
   "iPhone 6S Plus",
 ];
 
-const displayPhones = (iphoneLists) => {
-    iphoneListsBox.innerHTML = iphoneLists
+const displayPhones = (phone) => {
+    iphoneLists.innerHTML += phone
 }
 
 for (let i=0; i<iPhoneAvailable.length; i++) {
-  iphoneLists += `<button>${iPhoneAvailable[i]}</button> `;
+  displayPhones(`<button>${iPhoneAvailable[i]}</button>`);
 }
-console.log(iphoneLists);
-displayPhones(iphoneLists);
+
+
