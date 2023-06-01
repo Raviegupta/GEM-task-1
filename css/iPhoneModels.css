@@ -3,14 +3,16 @@
     font-size: 1rem;
     padding: 7px;
     margin: auto;
-    /* margin-top: -130px; */
-    /* margin-bottom: -40px; */
+    font-size: 1.1rem;
+    color: silver;
+    padding-left: 15px;
+    box-shadow: 0 0 3px;
 }
-.search-iphone-models {
+/* .search-iphone-models {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 #iphone-search-box {
     padding: 7px;
@@ -23,6 +25,7 @@
     justify-content: space-between;
     /* border: 1px solid red; */
 }
+
 #iphone-search-box button {
     padding: 7px 10px;
     margin: auto auto;

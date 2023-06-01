@@ -53,13 +53,13 @@ function searchPhone() {
     const searchValue = iPhoneSearchInput.value
     console.log(searchValue)
     const searchResult = arrOfiPhoneAvailable.filter(val => {
-        if(val.includes(searchValue)) return val;
+        if(val.toLowerCase().includes(searchValue.toLowerCase())) return val;
     })
     console.log(searchResult);
 
     iphoneLists.innerHTML = '';
     if(searchResult.length > 0)  searchResult.map(val => displayPhones(`<button>${val}</button>`));
-    else dispalyErrorMessage('No Data Available!!');
+    else dispalyErrorMessage('No Models Available!!');
 }
 
 // addEventListener
