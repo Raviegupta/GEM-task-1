@@ -1,10 +1,10 @@
 .main-section .search-iphone-models input {
-    width: 50%;
+    width: 80%;
     font-size: 1rem;
     padding: 7px;
     margin: auto;
-    margin-top: -130px;
-    margin-bottom: -40px;
+    /* margin-top: -130px; */
+    /* margin-bottom: -40px; */
 }
 .search-iphone-models {
     display: flex;
@@ -29,4 +29,12 @@
     font-size: 1.3rem;
     color: white;
     cursor: pointer;
+}
+
+.error-msg {
+    /* border: 1px solid blue; */
+    color: red;
+    font-weight: 600;
+    text-align: center;  
+    width: 100%
 }

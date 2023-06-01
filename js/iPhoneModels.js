@@ -1,10 +1,11 @@
 // variables
 const iPhoneSearchInput = document.querySelector("#iPhone-search-input");
-const iphoneSearchBtn = document.querySelector("#iphone-search-btn");
+// const iphoneSearchBtn = document.querySelector("#iphone-search-btn");
 let iphoneListsBox = document.querySelector("#mobile-lists-box");
 let iphoneLists = document.querySelector(".mobiles-list");
+const errorMessaage = document.querySelector('.error-msg');
 
-const iPhoneAvailable = [
+const arrOfiPhoneAvailable = [
     "iphone 14 Pro Max",
     "iPhone 14 Pro",
     "iPhone 14 Plus",
@@ -35,8 +36,33 @@ const displayPhones = (phone) => {
     iphoneLists.innerHTML += phone
 }
 
-for (let i=0; i<iPhoneAvailable.length; i++) {
-  displayPhones(`<button>${iPhoneAvailable[i]}</button>`);
+for (let i=0; i<arrOfiPhoneAvailable.length; i++) {
+  displayPhones(`<button>${arrOfiPhoneAvailable[i]}</button>`);
+}
+
+// function to display error message on screen 
+function dispalyErrorMessage(message) {
+    errorMessaage.textContent = message;       
+    
+    setTimeout(() => { 
+        errorMessaage.textContent = ''
+    }, 1500);
 }
 
 
+// function to search phone
+function searchPhone() {
+    const searchValue = iPhoneSearchInput.value
+    console.log(searchValue)
+    const searchResult = arrOfiPhoneAvailable.filter(val => {
+        if(val.includes(searchValue)) return val;
+    })
+    console.log(searchResult);
+
+    iphoneLists.innerHTML = '';
+    if(searchResult.length > 0)  searchResult.map(val => displayPhones(`<button>${val}</button>`));
+    else dispalyErrorMessage('No Data Available!!');
+}
+
+// addEventListener
+iPhoneSearchInput.addEventListener('input', searchPhone);
