@@ -1,7 +1,5 @@
 // variables
 const iPhoneSearchInput = document.querySelector("#iPhone-search-input");
-// const iphoneSearchBtn = document.querySelector("#iphone-search-btn");
-let iphoneListsBox = document.querySelector("#mobile-lists-box");
 let iphoneLists = document.querySelector(".mobiles-list");
 const errorMessaage = document.querySelector('.error-msg');
 
