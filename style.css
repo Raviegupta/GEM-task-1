@@ -27,8 +27,8 @@ ul li {
 }
 /* styling for marquee */
 .marque {
-    font-size: 1.6rem;
-    height: 60px;
+    font-size: 1.2rem;
+    height: 50px;
     background-color: #008081;
     color: white;
 }
@@ -42,8 +42,8 @@ ul li {
 }
 
 .nav-left-part ul li {
-    font-size: 1.6rem;
-    padding: 10px;
+    font-size: 1.1rem;
+    padding: 5px;
     border-right: 1px solid gray;
     padding-left: 15px;
     padding-right: 15px;
@@ -58,7 +58,7 @@ ul li {
 }
 
 .nav-right-part p {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     padding-right: 30px;
 }
 .nav-right-part .cart-box {
@@ -76,7 +76,7 @@ ul li {
     box-shadow: 0 0 2px;
 }
 .header ul li {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 15px;
     color: #777;
     cursor: pointer;
@@ -87,11 +87,11 @@ ul li {
     margin-right: 10px;
 }
 .header-right-part input {
-    padding: 10px;
+    padding: 7px;
     font-size: 1rem;
 }
 .header-right-part i{
-    padding: 11px;
+    padding: 10px;
     border: 1px solid gray;
     background-color: #242020;
     color: white;
@@ -106,9 +106,7 @@ ul li {
 
 /* CSS FOR MAIN SECTION */
 .main-section {
-    height: 700px;
     padding: 90px;
-    margin-bottom: 100px;
 }
 /* CSS STYLING FOR HARD-CASE & SILICON CASE TABS */
 .hard-silicon-case-tabs {
@@ -128,7 +126,7 @@ ul li {
 /* CSS STYLING FOR HARD CASE CONTENT */
 .hard-case-content {
     margin: 20px auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .hard-case-content p:first-child {
     text-align: center;
