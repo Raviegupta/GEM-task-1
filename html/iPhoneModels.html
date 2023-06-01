@@ -8,11 +8,13 @@
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/iPhoneModels.css">
 
     <!-- FontaAwsome links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script defer src="app.js"></script>
+    <script defer src="/app.js"></script>
+    <script defer src="/js/iPhoneModels.js"></script>
 </head>
 <body>
     <marquee behavior="scrolling" direction="left" class="marque flex max-container-size">
@@ -43,7 +45,7 @@
     <header class="header flex max-container-size">
         <div class="header-left-part">
             <ul class="flex">
-                <li><img src="images/logo.webp" alt=""></li>
+                <li><img src="/images/logo.webp" alt=""></li>
                 <li>BUMPER CASE</li>
                 <li>PREMIUM EDITION</li>
                 <li>SILICON CASE</li>
@@ -60,7 +62,7 @@
     <!-- this header is for tab & mobile view -->
     <header class="mobile-header flex tab-container-size">
         <div class="left-side flex">
-                <span id="hamburger-icon"><img src="images/Hamburger_icon.svg.png" alt="" style="width: 30px;"></span>
+                <span id="hamburger-icon"><img src="/images/Hamburger_icon.svg.png" alt="" style="width: 30px;"></span>
                 <span><i class="fa fa-search" aria-hidden="true"></i></span>
                 <section class="hamburger-item hidden">
                     <div class="cross">❎</div>
@@ -74,7 +76,7 @@
                 </section>  
         </div>
         <div class="mid">
-            <img src="images/logo.webp" alt="">
+            <img src="/images/logo.webp" alt="">
         </div>
         <div class="right-side">
             <span><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
@@ -82,32 +84,30 @@
     </header>
 
 
-    <section class="max-container-size">
-        <div class="banner"><img src="images/banner.webp" alt=""></div>
-    </section>
-
+    <!-- main body -->
     <main class="main-section max-container-size">
         <div class="search-iphone-models flex">
-            <input type="text" placeholder="enter the phone model to search">
+            <input id="iPhone-search-input" type="text" placeholder="enter the phone model to search">
+        </div>
+        <div id="iphone-search-box" class="flex">
+            <button id="iphone-search-btn">SEARCH</button>
         </div>
         <div class="hard-case-content">
             <div>
-                <h1>iPhone Phone Models</h1>
+                <h1>iPhone Models</h1>
                 <p>Choose your iPhone model from the below list. Dont find your model in the list? <a href=""><strong>Contact us</strong></a></p>
             </div>
-
-            <div class="mobiles-list flex">
-                <button>iPhone 14 Pro Max</button>
-                <button>iPhone Pro</button>
-                <button>iPhone 14 Plus</button>
-                <button>iPhone 14</button>
-                <button>iPhone 13 Pro Max</button>
-                <button>iPhone 13 Pro</button>
-                <button>iPhone 13</button>
-                <button>iPhone 13 Mini</button>
+            
+            <div id="mobile-lists-box">
+                <div class="mobiles-list flex">
+                    
+                </div>
             </div>
         </div>
     </main>
+
+
+
 
     <footer class="top-footer">
         <div class="left">

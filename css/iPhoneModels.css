@@ -1,0 +1,32 @@
+.main-section .search-iphone-models input {
+    width: 50%;
+    font-size: 1rem;
+    padding: 7px;
+    margin: auto;
+    margin-top: -130px;
+    margin-bottom: -40px;
+}
+.search-iphone-models {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#iphone-search-box {
+    padding: 7px;
+    margin: auto auto;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#iphone-search-box button {
+    padding: 7px 10px;
+    margin: auto auto;
+    background-image: linear-gradient(to right, rgb(202, 176, 176) , rgb(190, 190, 13));
+    border: none;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+}
