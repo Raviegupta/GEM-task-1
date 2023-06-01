@@ -12,9 +12,10 @@
     <!-- FontaAwsome links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script defer src="app.js"></script>
 </head>
 <body>
-    <marquee behavior="" direction="" class="marque flex max-container-size">
+    <marquee behavior="scrolling" direction="left" class="marque flex max-container-size">
         <pre class="flex">
             Welcome to Suppafy.  <strong>Use Code: AVAIL50 to get 10% OFF</strong>       Welcome to Suppafy.  <strong>Use Code: AVAIL50 to get 10% OFF</strong> 
         </pre>
@@ -59,8 +60,18 @@
     <!-- this header is for tab & mobile view -->
     <header class="mobile-header flex tab-container-size">
         <div class="left-side flex">
-            <span><img src="images/Hamburger_icon.svg.png" alt="" style="width: 30px;"></span>
-            <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                <span id="hamburger-icon"><img src="images/Hamburger_icon.svg.png" alt="" style="width: 30px;"></span>
+                <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                <section class="hamburger-item hidden">
+                    <div class="cross">❎</div>
+                    <ul>
+                        <li>BUMPER CASE</li>
+                        <li>PREMIUM EDITION</li>
+                        <li>SILICON CASE</li>
+                        <li>HARD CASE</li>
+                        <li>TRACK YOUR ORDER</li>
+                    </ul>
+                </section>  
         </div>
         <div class="mid">
             <img src="images/logo.webp" alt="">
@@ -69,6 +80,7 @@
             <span><i class="fa fa-shopping-bag" aria-hidden="true"></i></span>
         </div>
     </header>
+
 
     <section class="max-container-size">
         <div class="banner"><img src="images/banner.webp" alt=""></div>
