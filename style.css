@@ -26,6 +26,10 @@ ul li {
     margin: auto auto;
 }
 
+button {
+    cursor: pointer;
+}
+
 /* styling for marquee */
 .marque {
     font-size: 1.2rem;
