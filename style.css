@@ -116,9 +116,12 @@ button {
 .main-section {
     padding: 90px;
 }
+
 /* CSS STYLING FOR HARD-CASE & SILICON CASE TABS */
 .hard-silicon-case-tabs {
     justify-content: space-between;
+    /* border: 2px solid red; */
+    margin-top: 60px;
 }
 .hard-silicon-case-tabs .hard-case, .hard-silicon-case-tabs .silicon-case{
     /* border: 2px solid red; */
@@ -290,6 +293,12 @@ button {
 }
 
 
+/* ------------------------------------------------------- */
+/* search-iphone-models */
+.search-iphone-models input {
+    margin-top: 5px;
+    padding: 4px;
+}
 
 
 

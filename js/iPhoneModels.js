@@ -34,9 +34,9 @@ const displayPhones = (phone) => {
     iphoneLists.innerHTML += phone
 }
 
-for (let i=0; i<arrOfiPhoneAvailable.length; i++) {
-  displayPhones(`<button>${arrOfiPhoneAvailable[i]}</button>`);
-}
+// for (let i=0; i<arrOfiPhoneAvailable.length; i++) {
+//   displayPhones(`<button>${arrOfiPhoneAvailable[i]}</button>`);
+// }
 
 // function to display error message on screen 
 function dispalyErrorMessage(message) {
@@ -59,8 +59,14 @@ function searchPhone() {
 
     iphoneLists.innerHTML = '';
     if(searchResult.length > 0)  searchResult.map(val => displayPhones(`<button>${val}</button>`));
-    else dispalyErrorMessage('No Models Available!!');
+    else dispalyErrorMessage('No Models Available!!')
+    
+    if(iPhoneSearchInput.value == '') {
+        iphoneLists.innerHTML = '';
+    }
+
 }
 
 // addEventListener
 iPhoneSearchInput.addEventListener('input', searchPhone);
+console.log(iPhoneSearchInput.value)
