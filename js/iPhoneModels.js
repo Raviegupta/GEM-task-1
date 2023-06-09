@@ -34,9 +34,9 @@ const displayPhones = (phone) => {
     iphoneLists.innerHTML += phone
 }
 
-// for (let i=0; i<arrOfiPhoneAvailable.length; i++) {
-//   displayPhones(`<button>${arrOfiPhoneAvailable[i]}</button>`);
-// }
+for (let i=0; i<arrOfiPhoneAvailable.length; i++) {
+  displayPhones(`<button>${arrOfiPhoneAvailable[i]}</button>`);
+}
 
 // function to display error message on screen 
 function dispalyErrorMessage(message) {
